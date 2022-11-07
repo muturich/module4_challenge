@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB QUIZ</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+  </head>
+  <body>
+<header>
+  <ul>
+<!--Timer-->
+    <li class="timer">
+      Time:50
+    </li>
+  </ul>
+</header>
+<section id="cards">
+<!--Opening Page-->
+<div id="start">
+  <h2>Javascript Coding Quiz</h2>
+  <p>Try to answer the coding based questions within the time limit. Correct answers will award you with five points.Incorrect answers will decrease your time by ten seconds.</p>
+  <button class="begin">Start Quiz</button>
+</div>
+<!--1st question-->
+<div id="Q1" class="question">
+ <h2>Which of these is not an actual Javascript Object? </h2>
+ <button>1. Math.max</button>
+ <button>2.Math Floor</button>
+ <button class="correct1">3. Math.pos</button>
+ <button>4. Math.random</button>
+<h3 id="feedback1"></h3>
+
+<!--2nd question-->
+<div id="Q2" class="question">
+  <h2>Which is not a waf of concatenting two arrays?</h2>
+  <button class="correct2">1. Merge</button>
+  <button>2.Push()</button>
+  <button>3.Concat()</button>
+  <button>4. Merge[]</button>
+ <h3 id="feedback2"></h3>
+</div>
+
+ <!--3rd question-->
+<div id="Q3" class="question">
+  <h2>What is a set of text in quotation marks called ?</h2>
+  <button>1.Variable</button>
+  <button class="correct3">2.String</button>
+  <button>3. Content</button>
+  <button>4. Text</button>
+ <h3 id="feedback3"></h3>
+</div>
+ <!--4th question-->
+<div id="Q4" class="question">
+  <h2>The conditions of an if statement are enclosed in__</h2>
+  <button>1. Parenthesis</button>
+  <button>2.Curly Brackets</button>
+  <button class="correct1">3. Quotation Marks</button>
+  <button>4. Brackets</button>
+ <h3 id="feedback4"></h3>
+ </div>
+
+ <!--5th question-->
+ <div id="Q5" class="question">
+  <h2>Which of these is not a way of displaying an ineractive pop-up window, to the user?</h2>
+  <button>1.Window.prompt()</button>
+  <button>2.Window.alert()</button>
+  <button>3.Window.confirm()</button>
+  <button>4. Window.input()</button>
+ <h3 id="feedback5"></h3>
+ </div>
+
+ <!--Highscores-->
+ </div id="highscores">
+    <h2>High scores</h2>
+    <ul id="scores">
+    </ul>
+    <button id="go_back">Go Back</button>
+    <button id="clear">Clear High Scores</button>
+</div>
+</section>
+
+<script src="./Assets/script.js"></script>
+</body>
+</html>
